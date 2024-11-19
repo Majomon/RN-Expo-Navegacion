@@ -7,14 +7,8 @@ const HomeScreen = () => {
   return (
     <SafeAreaView>
       <View className="px-10">
-        <Link href={"/products"} asChild>
-          <CustomButton className="mb-10" color="primary">
-            Hola mundo
-          </CustomButton>
-        </Link>
-
         <CustomButton
-          className="mb-10"
+          className="mb-2"
           color="primary"
           onPress={() => router.push("/products")}
         >
@@ -22,12 +16,27 @@ const HomeScreen = () => {
         </CustomButton>
 
         <CustomButton
-          className="mb-10"
-          variant="text-only"
-          onPress={() => router.push("/products")}
+          className="mb-2"
+          // variant="text-only"
+          color="secondary"
+          onPress={() => router.push("/profile")}
         >
-          Hola mundo
+          Perfil
         </CustomButton>
+
+        <CustomButton
+          className="mb-2"
+          color="terciary"
+          onPress={() => router.push("/settings")}
+        >
+          Ajustes
+        </CustomButton>
+
+        <Link href={"/products"} asChild>
+          <CustomButton variant="text-only" className="mb-10" color="primary">
+            Hola mundo
+          </CustomButton>
+        </Link>
 
         {/* <Link className="mb-5" href={"/products"}>
           Productos
