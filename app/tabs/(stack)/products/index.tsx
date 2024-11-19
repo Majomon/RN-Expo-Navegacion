@@ -18,7 +18,7 @@ const ProductsScreen = () => {
               <Text className="font-work-black">{item.price}</Text>
               <Link
                 className="text-primary"
-                href={`/(stack)/products/${item.id}`}
+                href={`/tabs/(stack)/products/${item.id}`}
               >
                 Ver detalles
               </Link>
