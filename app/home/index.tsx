@@ -8,10 +8,24 @@ const HomeScreen = () => {
     <SafeAreaView>
       <View className="px-10">
         <Link href={"/products"} asChild>
-          <CustomButton color="primary">Hola mundo</CustomButton>
+          <CustomButton className="mb-10" color="primary">
+            Hola mundo
+          </CustomButton>
         </Link>
 
-        <CustomButton color="primary" onPress={() => router.push("/products")}>
+        <CustomButton
+          className="mb-10"
+          color="primary"
+          onPress={() => router.push("/products")}
+        >
+          Productos
+        </CustomButton>
+
+        <CustomButton
+          className="mb-10"
+          variant="text-only"
+          onPress={() => router.push("/products")}
+        >
           Hola mundo
         </CustomButton>
 
