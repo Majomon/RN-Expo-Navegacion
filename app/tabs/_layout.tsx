@@ -6,7 +6,12 @@ const TabsLayout = () => {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: "purple",
+        tabBarActiveTintColor: "indigo",
+        headerShown: false,
+        // tabBarStyle: {
+        //   backgroundColor: "black",
+        // },
+        // tabBarActiveBackgroundColor: "red",
         // tabBarShowLabel: false,
       }}
     >
@@ -24,7 +29,7 @@ const TabsLayout = () => {
         options={{
           title: "Inicio",
           tabBarIcon: ({ color }) => (
-            <Ionicons size={28} name="star-outline" color={color} />
+            <Ionicons size={28} name="home-outline" color={color} />
           ),
         }}
       />
