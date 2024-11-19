@@ -1,6 +1,5 @@
-import { Link, Redirect } from "expo-router";
+import { Redirect } from "expo-router";
 import React from "react";
-import { SafeAreaView, Text, View } from "react-native";
 
 const App = () => {
   // return <Redirect href={"/(stack)/home"} />;

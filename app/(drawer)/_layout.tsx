@@ -2,14 +2,13 @@ import { CustomDrawer } from "@/components/shared/CustomDrawer";
 import { Ionicons } from "@expo/vector-icons";
 import { Drawer } from "expo-router/drawer";
 import React from "react";
-import { Text } from "react-native";
 
 const DrawerLayout = () => {
   return (
     <Drawer
       drawerContent={CustomDrawer}
       screenOptions={{
-        headerShown: false,
+        // headerShown: false,
         overlayColor: "rgba(0,0,0,0.4) ",
         drawerActiveTintColor: "indigo",
         headerShadowVisible: false,
@@ -21,6 +20,7 @@ const DrawerLayout = () => {
       <Drawer.Screen
         name="(tabs)"
         options={{
+          headerShown: false,
           drawerLabel: "Tabs + Stack",
           title: "Tabs + Stack",
           drawerIcon: ({ color, size }) => (
